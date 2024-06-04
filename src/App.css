@@ -1,0 +1,94 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+body {
+  background: white;
+}
+
+.App {
+  height: 100vh;
+}
+
+.dropdown-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.dropdown-label {
+  margin-right: 10px;
+  color: #252424;
+  font-weight: bold;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  background-color: white;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 3px 3px 18px 3px rgba(0, 0, 0, 0.2);
+  min-width: 200px;
+  max-width: 200px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown-button div {
+  margin-right: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-item {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dataTableWrapper {
+  width: 80%; /* Control the width to be 80% of the screen width */
+  margin: auto; /* Center the table horizontally */
+  padding: 0px; /* Add some padding around the table */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: Add shadow for depth */
+  border-radius: 8px; /* Rounded corners */
+  background: #fff; /* Optional: Set a background color */
+}
+
+.react-data-table {
+  border-radius: 8px; /* Rounded corners for the table itself */
+}
+
+@media (max-width: 768px) {
+  .dataTableWrapper {
+      width: 100%; /* Full width on smaller screens */
+      margin: 0 0 30 0; /* Remove margin to utilize the full screen width */
+      padding: 0; /* Optionally remove padding for edge-to-edge design */
+      box-shadow: none; /* Optionally remove shadow for a flatter design */
+  }
+}
